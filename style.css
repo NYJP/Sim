@@ -1,0 +1,15 @@
+:root {
+    --x: 50px;
+    --y: 50px;
+    --top: 10px;
+}
+
+#window{
+    width: var(--x);
+    height: var(--y);
+    border-style: solid;
+    border-width: 10px;
+    margin: auto;
+    position: relative;
+    top: var(--top);
+}
