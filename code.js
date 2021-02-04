@@ -56,7 +56,7 @@ document.querySelectorAll('.dirbuttons').forEach(function(element){
 
 function holddown(element){
     if (element.id == 'down'){
-        if (mapy+10 > 530-Math.round(y/10)) mapy = 530-Math.round(y/10);
+        if (mapy+10 > 529-Math.round(y/10)) mapy = 530-Math.round(y/10);
         else mapy+=10;
     }
     else if (element.id == 'up'){
@@ -64,7 +64,7 @@ function holddown(element){
         else mapy-=10;
     }
     else if (element.id == 'right'){
-        if (mapx+10 > 530-Math.round(x/10)) mapx = 530-Math.round(x/10);
+        if (mapx+10 > 529-Math.round(x/10)) mapx = 530-Math.round(x/10);
         else mapx+=10;
     }
     else if (element.id == 'left'){
