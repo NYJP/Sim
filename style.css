@@ -1,15 +1,49 @@
 :root {
-    --x: 50px;
-    --y: 50px;
     --top: 10px;
+    --buttonx: 100px;
+    --buttony: 100px;
+    --buttonw: 20px;
 }
 
 #window{
-    width: var(--x);
-    height: var(--y);
     border-style: solid;
     border-width: 10px;
     margin: auto;
     position: relative;
+    display: block;
     top: var(--top);
+}
+
+.dirbuttons{
+    position: absolute;
+    z-index: 2;
+    opacity:0;
+}
+
+#up{
+    width: var(--buttonx);
+    height: var(--buttonw);
+    top: 0px;
+    right: var(--buttonw);
+}
+
+#down{
+    width: var(--buttonx);
+    height: var(--buttonw);
+    bottom: 50px;
+    left: var(--buttonw);
+}
+
+#left{
+    height: var(--buttony);
+    width: var(--buttonw);
+    top: var(--buttonw);
+
+}
+
+#right{
+    height: var(--buttony);
+    width: var(--buttonw);
+    top: var(--buttonw);
+    right: 0px;
 }
