@@ -50,6 +50,15 @@ document.querySelectorAll('.dirbuttons').forEach(function(element){
             })
         }
     })
+    element.addEventListener("touchstart",function(){
+        if (!isheld){
+            isheld = true;
+            holddown(element);
+            element.addEventListener("touchend",function(){
+                isheld = false;
+            })
+        }
+    })
     
     
 })
